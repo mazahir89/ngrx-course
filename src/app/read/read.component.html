@@ -1,0 +1,10 @@
+<div class="right" *ngIf="courses">
+
+  <h3>Courses</h3>
+  <ul>
+    <li *ngFor="let course of courses | async">
+      <a [href]="course.url" target="_blank">{{ course.name }}</a>
+    </li>
+  </ul>
+
+</div>

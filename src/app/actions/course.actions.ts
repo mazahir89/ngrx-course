@@ -14,5 +14,7 @@ export class AddCourse implements Action {
 export class RemoveCourse implements Action {
   readonly type = REMOVE_COURSE;
 
-  constructor(public payload: Course) { }
+  constructor(public payload: number) { }
 }
+
+export type Actions = AddCourse | RemoveCourse;
